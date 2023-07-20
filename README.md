@@ -14,7 +14,7 @@
 ### Planet Sudo installieren
 
 - PlanetSudo AI Projekt herunterladen:
-    - entweder hier klicken [Download](https://github.com/openbase/planetsudo.ai/archive/master.zip) und das Projekt als zip runterladen und entpacken. (Anfänger)
+    - entweder hier klicken [Download](https://github.com/openbase/planetsudo.ai/archive/stable.zip) und das Projekt als zip runterladen und entpacken. (Anfänger)
         - Achtung bei dieser Methode geht die git Versionisierung verlohren.
     - oder einen Fork auf github erstellen https://github.com/openbase/planetsudo.ai.git und mit git local in einen Ordner clonen. (Für erfahrene Github Benutzer)
     
@@ -25,23 +25,6 @@
     - Linux: settings.xml -> ~/.m2/
 - Jetzt kann PlanetSudo gestartet werden. (Hierzu auf den Playbutton drücken)
 - Um eine bessere Unterstützung bei der KI-Entwickelung zu erhalten, in der "Project" Ansicht einen rechten Mausklick auf den  "ai" Wurzelordner ausführen und anschließen auf "Maven->Download Source and Documentation" klicken.
-
-## Installation via Netbeans IDE
-
-- Java/Netbeans Bundle herunterladen und installieren.
-    - Die Java Version sollte mindestens JDK 8 (Java SE Development Kit 8) betragen.
-        - [Download Netbeans Bundle](http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html)
-- PlanetSudo AI Projekt herunterladen:
-    - entweder hier klicken [Download](https://github.com/openbase/planetsudo.ai/archive/master.zip) und das Projekt als zip runterladen und entpacken. (Anfänger)
-        - Achtung bei dieser Methode geht die git Versionisierung verlohren.
-    - oder einen Fork auf github erstellen https://github.com/openbase/planetsudo.ai.git und mit git local in einen Ordner clonen. (Für erfahrene Github Benutzer)
-- Im Netbeans Menü auf Projekt öffnen klicken (File->OpenProject) und den PlanetSudoAI Ordner als Projekt laden.
-- Anschließend die settings.xml (liegt im Projektordner) in den .m2 Ordner im Benutzerverzeichniss kopieren. 
-    - Windows: settings.xml -> C:\Dokumente und Einstellungen/%USERNAME%/.m2/
-        - Alternative kann hierfür auch das "setup-mvn.bat" script ausgeführt werden welches den Kopiervorgang übernimmt.
-    - Linux: settings.xml -> ~/.m2/
-- Jetzt kann PlanetSudo in Netbeans gestartet werden. (Hierzu auf den Playbutton drücken)
-- Um eine bessere Unterstützung bei der KI-Entwickelung zu erhalten, in der "Projects" Ansicht einen rechten Mausklick auf "Dependencies" ausführen und anschließen auf "Download Javadoc" klicken.
 
 ## Anlegen einer neuen KI
 
