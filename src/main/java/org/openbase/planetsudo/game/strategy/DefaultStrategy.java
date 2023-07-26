@@ -40,7 +40,7 @@ public class DefaultStrategy extends AbstractStrategy {
     /**
      * Über diese Methode kannst du angeben wie viele Agenten dein Team besitzen soll.
      * ===============================================================================
-     * Bedenke, dass dein Muterschiff die Aktionspunkte (APs) gleichmäßig auf deine Agenten verteilt.
+     * Bedenke, dass dein Mutterschiff die Aktionspunkte (APs) gleichmäßig auf deine Agenten verteilt.
      * Somit ist ein Team mit vielen Agenten unheimlich effizient beim Resourcen sammeln und beim Planeten erforschen,
      * allerdings stehen einem einzelnen Agenten weniger Aktionspunkte für den Kampf mit feindlichen Agenten zur Verfügung wodurch große Teams im Kampf schwächer sind.
      *
