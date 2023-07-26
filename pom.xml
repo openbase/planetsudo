@@ -4,7 +4,7 @@
 
 	<groupId>org.openbase</groupId>
 	<artifactId>planetsudo.ai</artifactId>
-	<version>3.0.4-SNAPSHOT</version>
+	<version>3.0.4</version>
     
     <name>PlanetSudo Artificial Intelligence</name>
     <inceptionYear>2009</inceptionYear>
@@ -46,7 +46,7 @@
         <connection>scm:git:https://github.com/openbase/planetsudo.ai.git</connection>
         <developerConnection>scm:git:https://github.com/openbase/planetsudo.ai.git</developerConnection>
         <url>https://github.com/openbase/planetsudo.ai.git</url>
-      <tag>HEAD</tag>
+      <tag>v3.0.4</tag>
   </scm>
 
 	<build>
