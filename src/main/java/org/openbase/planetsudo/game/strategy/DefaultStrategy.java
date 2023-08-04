@@ -4,7 +4,7 @@ package org.openbase.planetsudo.game.strategy;
  * #%L
  * PlanetSudo Artificial Intelligence
  * %%
- * Copyright (C) 2009 - 2019 openbase.org
+ * Copyright (C) 2009 - 2023 openbase.org
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
@@ -40,7 +40,7 @@ public class DefaultStrategy extends AbstractStrategy {
     /**
      * Über diese Methode kannst du angeben wie viele Agenten dein Team besitzen soll.
      * ===============================================================================
-     * Bedenke, dass dein Muterschiff die Aktionspunkte (APs) gleichmäßig auf deine Agenten verteilt.
+     * Bedenke, dass dein Mutterschiff die Aktionspunkte (APs) gleichmäßig auf deine Agenten verteilt.
      * Somit ist ein Team mit vielen Agenten unheimlich effizient beim Resourcen sammeln und beim Planeten erforschen,
      * allerdings stehen einem einzelnen Agenten weniger Aktionspunkte für den Kampf mit feindlichen Agenten zur Verfügung wodurch große Teams im Kampf schwächer sind.
      *
