@@ -4,7 +4,7 @@
 
 	<groupId>org.openbase</groupId>
 	<artifactId>planetsudo.ai</artifactId>
-	<version>3.0.0-SNAPSHOT</version>
+	<version>3.0.4-SNAPSHOT</version>
     
     <name>PlanetSudo Artificial Intelligence</name>
     <inceptionYear>2009</inceptionYear>
@@ -257,7 +257,7 @@
 		<dependency>
 			<groupId>org.openbase</groupId>
 			<artifactId>planetsudo</artifactId>
-			<version>3.0.4</version>
+			<version>3.0.4-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
