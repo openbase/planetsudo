@@ -1,6 +1,4 @@
-package org.openbase.planetsudo.game.strategy;
-
-/*-
+package org.openbase.planetsudo.game.strategy /*-
  * #%L
  * PlanetSudo Artificial Intelligence
  * %%
@@ -21,21 +19,15 @@ package org.openbase.planetsudo.game.strategy;
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
-import static org.openbase.planetsudo.game.SwatTeam.*;
-import org.openbase.planetsudo.level.levelobjects.AgentInterface;
+
+import org.openbase.planetsudo.game.SwatTeam.*
+import org.openbase.planetsudo.level.levelobjects.AgentInterface
 
 /**
  *
- * @author <a href="mailto:divine@openbase.org">Divine Threepwood</a>
+ * @author [Divine Threepwood](mailto:divine@openbase.org)
  */
-public class DefaultStrategy extends AbstractStrategy {
-
-    public DefaultStrategy() {
-    }
-
-    public DefaultStrategy(AgentInterface a) {
-        super(a);
-    }
+class DefaultStrategy(agent: AgentInterface) : AbstractStrategy(agent) {
 
     /**
      * Über diese Methode kannst du angeben wie viele Agenten dein Team besitzen soll.
@@ -46,10 +38,7 @@ public class DefaultStrategy extends AbstractStrategy {
      *
      * @return Anzahl der Agenten
      */
-    @Override
-    protected int loadAgentCount() {
-        return 10;
-    }
+    override fun loadAgentCount() = 10
 
     /**
      * Hier kannst du SwatTeams aus mehreren Agenten bilden.
@@ -61,8 +50,7 @@ public class DefaultStrategy extends AbstractStrategy {
      *
      * ACHTUNG: Die default Gruppen ALL und COMMANDER können anhand dieser Methode nicht modifiziert werden!
      */
-    @Override
-    protected void loadSwatTeams() {
+    override fun loadSwatTeams() {
         // createSwat(ALPHA, 1, 6, 8);
         // createSwat(DELTA, 2, 6, 7);
     }
@@ -80,36 +68,25 @@ public class DefaultStrategy extends AbstractStrategy {
      * Swat Teams müssen zuvor über die "loadSwatTeams" Methode erstellt werden.
      * Anschließend kann das "ALL" der Regel Definition durch den Swatnamen ersetzt werden.
      * Eine Regel kann mehreren, durch Komma getrennten, Swat Teams zugeteilt werden. Zudem können Swat Teams mit dem "NOT_" prefix von einer Regel ausgeschlossen werden.
-     * 
+     *
      * z.B. "createRule(new Rule("Just Go", ALPHA, FOXTROT)" oder "createRule(new Rule("Just Go", ALL, NOT_FOXTROT)"
      */
-    @Override
-    protected void loadRules() {
+    override fun loadRules() {
         //-------------------------------------------->
-        createRule(new Rule("Just Go", ALL) {
-            @Override
-            protected boolean constraint() {
-                return true;
-            }
+        "Just Go" all inCase { true } then { agent.go()}
 
-            @Override
-            protected void action() {
-                agent.go();
-            }
-        });
         /**
          * Eine neue Regel erstellen
          * =========================
          * Hierzu markiere am besten die obere Regel von "//" bis "});" und drücke in Netbeans die Tastenkombination: (Strg + Shift + Down)
-         * Die Regel sollte somit kopiert und als nächste Regel eingefügt werden. 
-         * 
+         * Die Regel sollte somit kopiert und als nächste Regel eingefügt werden.
+         *
          * Nachträgliche Änderung von Prioritäten
          * ======================================
          * Während der Optimierung der Strategie, wird es immer mal wieder nötig sein die Prioritäten existiereder Regeln neu zu verteilen.
-         * Realisiert werden kann dies durch die Änderung der Regelreihenfolgen. Soll die Priorität einer Regel verändert werden, 
+         * Realisiert werden kann dies durch die Änderung der Regelreihenfolgen. Soll die Priorität einer Regel verändert werden,
          * so wird die zu verschiebene Regel markiert (von "//" bis "});") und in Netbeans über die Tastenkombination (Alt + Shift + (Up/Down)) verschoben.
-         * 
+         *
          */
-       
     }
 }

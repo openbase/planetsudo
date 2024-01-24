@@ -1,6 +1,4 @@
-package org.openbase.planetsudo.main;
-
-/*-
+package org.openbase.planetsudo.main /*-
  * #%L
  * PlanetSudo Artificial Intelligence
  * %%
@@ -27,13 +25,13 @@ package org.openbase.planetsudo.main;
  *
  * @author Divine Threepwood
  */
-public class PlanetSudo {
-
+object PlanetSudo {
     /**
      * Start the planet sudo game engine.
-	 * @param args the command line arguments
-	 */
-	public static void main(String[] args) {
-		Main.main(args);
-	}
+     * @param args the command line arguments
+     */
+    @JvmStatic
+    fun main(args: Array<String>) {
+        Main.main(args)
+    }
 }
