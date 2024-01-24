@@ -28,7 +28,7 @@ package org.openbase.planetsudo.main /*-
 object PlanetSudo {
     /**
      * Start the planet sudo game engine.
-     * @param args the command line arguments
+     * @param args the command line arguments. Use "--help" for more information.
      */
     @JvmStatic
     fun main(args: Array<String>) {

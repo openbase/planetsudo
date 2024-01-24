@@ -24,7 +24,8 @@ import org.openbase.planetsudo.game.SwatTeam.*
 import org.openbase.planetsudo.level.levelobjects.AgentInterface
 
 /**
- *
+ * Diese Klasse ist eine Vorlage für eine KI im Spiel: PlanetSudo
+ * ============================================================
  * @author [Divine Threepwood](mailto:divine@openbase.org)
  */
 class DefaultStrategy(agent: AgentInterface) : AbstractStrategy(agent) {
@@ -33,60 +34,61 @@ class DefaultStrategy(agent: AgentInterface) : AbstractStrategy(agent) {
      * Über diese Methode kannst du angeben wie viele Agenten dein Team besitzen soll.
      * ===============================================================================
      * Bedenke, dass dein Mutterschiff die Aktionspunkte (APs) gleichmäßig auf deine Agenten verteilt.
-     * Somit ist ein Team mit vielen Agenten unheimlich effizient beim Resourcen sammeln und beim Planeten erforschen,
-     * allerdings stehen einem einzelnen Agenten weniger Aktionspunkte für den Kampf mit feindlichen Agenten zur Verfügung wodurch große Teams im Kampf schwächer sind.
+     * Somit ist ein Team mit vielen Agenten sehr effizient beim Ressourcen sammeln und beim Planeten erforschen,
+     * allerdings stehen einem einzelnen Agenten weniger Aktionspunkte für den Kampf
+     * mit feindlichen Agenten zur Verfügung wodurch kleine Teams im Kampf stärker sind.
      *
      * @return Anzahl der Agenten
      */
     override fun loadAgentCount() = 10
 
     /**
-     * Hier kannst du SwatTeams aus mehreren Agenten bilden.
-     * =====================================================
-     * Die Agenten werden hierbei über ihre IDs hinzugefügt. Sind beispielsweise 4 Agenten in der Strategie angegeben,
-     * so sind diese über die IDs 0 - 3 referenzierbar wobei Agent 0 immer für den Kommander steht.
-     * Bitte beachte somit, dass die Agenten ID nicht größer als N - 1 sein kann sofern N für die maximale Anzahl von Agenten steht.
-     * Ein Agent darf durchaus in mehrere Swat Teams eingeteilt werden.
-     *
-     * ACHTUNG: Die default Gruppen ALL und COMMANDER können anhand dieser Methode nicht modifiziert werden!
-     */
-    override fun loadSwatTeams() {
-        // createSwat(ALPHA, 1, 6, 8);
-        // createSwat(DELTA, 2, 6, 7);
-    }
-
-    /**
      * Hier kannst du die Regeln für deine Agenten definieren.
      *
      * Prioritäten festlegen
      * =====================
-     * Die Reihenfolge der Registrierung bestimmt hierbei die Priorität der Regeln.
-     * So besitzt die erste Registrierte Regeln die geringste und die zuletzt registrierte Regel die höchste Priorität.
+     * Die Reihenfolge der Registrierung bestimmt die Priorität der Regeln.
+     * So besitzt die erste Regel die geringste und die zuletzt registrierte Regel die höchste Priorität.
+     *
+     *  geringere Priorität
+     *           ⇧
+     *         Regel
+     *           ⇩
+     *   höhere Priorität
      *
      * Swat Teams
      * ==========
+     * Swat Teams können verwendet werden, um Regeln nur für bestimmte Agenten zu beschreiben.
      * Swat Teams müssen zuvor über die "loadSwatTeams" Methode erstellt werden.
-     * Anschließend kann das "ALL" der Regel Definition durch den Swatnamen ersetzt werden.
-     * Eine Regel kann mehreren, durch Komma getrennten, Swat Teams zugeteilt werden. Zudem können Swat Teams mit dem "NOT_" prefix von einer Regel ausgeschlossen werden.
+     * Anschließend kann das "all" der Regeldefinition durch "swat X" ersetzt werden.
+     * Eine Regel kann mehreren, durch "and" verbundene Swat Teams zugeteilt werden.
+     * Zudem können Swat Teams mit dem "NOT_" prefix von einer Regel ausgeschlossen werden.
      *
-     * z.B. "createRule(new Rule("Just Go", ALPHA, FOXTROT)" oder "createRule(new Rule("Just Go", ALL, NOT_FOXTROT)"
+     * z.B. "Just Go" swat ALPHA inCase { true } then { agent.go()}
+     * oder "Just Go" swat ALPHA and FOXTROT inCase { true } then { agent.go()}
      */
     override fun loadRules() {
         //-------------------------------------------->
-        "Just Go" all inCase { true } then { agent.go()}
+        "Just Go" swat ALPHA and FOXTROT inCase { true } then { agent.go()}
+        //-------------------------------------------->
+        // Füge hier die Regel mit der nächst höheren Priorität ein. <---- !!! HIER STARTEN !!!
+        //-------------------------------------------->
+    }
 
-        /**
-         * Eine neue Regel erstellen
-         * =========================
-         * Hierzu markiere am besten die obere Regel von "//" bis "});" und drücke in Netbeans die Tastenkombination: (Strg + Shift + Down)
-         * Die Regel sollte somit kopiert und als nächste Regel eingefügt werden.
-         *
-         * Nachträgliche Änderung von Prioritäten
-         * ======================================
-         * Während der Optimierung der Strategie, wird es immer mal wieder nötig sein die Prioritäten existiereder Regeln neu zu verteilen.
-         * Realisiert werden kann dies durch die Änderung der Regelreihenfolgen. Soll die Priorität einer Regel verändert werden,
-         * so wird die zu verschiebene Regel markiert (von "//" bis "});") und in Netbeans über die Tastenkombination (Alt + Shift + (Up/Down)) verschoben.
-         *
-         */
+    /**
+     * Hier kannst du Swat Teams aus mehreren Agenten bilden.
+     * =====================================================
+     * Die Agenten werden hierbei über ihre Nummern hinzugefügt. Sind beispielsweise 4 Agenten in der Strategie angegeben,
+     * so sind diese über die Nummern 0 - 3 referenzierbar wobei Agent 0 immer für den Commander steht.
+     * Bitte beachte somit, dass die Agentennummer nicht größer als Agentenanzahl - 1 sein darf.
+     * Ein Agent darf durchaus mehrere Swat Teams zugeteilt werden.
+     *
+     * ACHTUNG: Die default Swats ALL und COMMANDER können anhand dieser Methode nicht modifiziert werden!
+     */
+    override fun loadSwatTeams() {
+        // createSwat(ALPHA, 1, 6, 8)
+        // createSwat(BRAVO, 2, 6, 7)
+        // createSwat(FOXTROT, 2, 6, 7)
+        // ...
     }
 }
