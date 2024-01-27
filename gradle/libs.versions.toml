@@ -3,8 +3,9 @@
 
 [versions]
 junit-junit = "4.13.1"
-org-openbase-planetsudo = "4.0.0-SNAPSHOT"
+#org-openbase-planetsudo-engine = "4.0-SNAPSHOT"
+org-openbase-planetsudo-engine = "[4.0,4.1-alpha)"
 
 [libraries]
 junit-junit = { module = "junit:junit", version.ref = "junit-junit" }
-org-openbase-planetsudo = { module = "org.openbase:planetsudo", version.ref = "org-openbase-planetsudo" }
+org-openbase-planetsudo-engine = { module = "org.openbase:planetsudo.engine", version.ref = "org-openbase-planetsudo-engine" }

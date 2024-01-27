@@ -18,9 +18,9 @@ repositories {
 }
 
 dependencies {
-    api(libs.org.openbase.planetsudo)
-    testImplementation(libs.junit.junit)
+    implementation(libs.org.openbase.planetsudo.engine)
     implementation(kotlin("stdlib-jdk8"))
+    testImplementation(libs.junit.junit)
 }
 
 group = "org.openbase"
