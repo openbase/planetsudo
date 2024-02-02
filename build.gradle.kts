@@ -4,7 +4,6 @@
 
 plugins {
     application
-    `java-library`
     `maven-publish`
     signing
     kotlin("jvm")

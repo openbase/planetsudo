@@ -69,7 +69,7 @@ class DefaultStrategy(agent: AgentInterface) : AbstractStrategy(agent) {
      */
     override fun loadRules() {
         //-------------------------------------------->
-        "Just Go" swat ALPHA and FOXTROT inCase { true } then { agent.go()}
+        "Just Go" all inCase { true } then { agent.go()}
         //-------------------------------------------->
         // Füge hier die Regel mit der nächst höheren Priorität ein. <---- !!! HIER STARTEN !!!
         //-------------------------------------------->
