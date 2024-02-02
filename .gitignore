@@ -222,4 +222,5 @@ www/.vuepress/dist
 jspm_packages
 
 ### Custom
+.idea
 teams
