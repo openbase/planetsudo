@@ -3,21 +3,23 @@
  */
 
 plugins {
+    application
     `java-library`
     `maven-publish`
     signing
     kotlin("jvm")
 }
 
+group = "org.openbase"
+description = "PlanetSudo is a reactive multi agent simulation game. This package can be used to prototype the artificial intelligence for a new team."
+
+
 repositories {
     mavenLocal()
-    maven {
-        url = uri("https://repo.maven.apache.org/maven2/")
-    }
+    mavenCentral()
     maven {
         url = uri("https://oss.sonatype.org/content/repositories/snapshots/")
     }
-    mavenCentral()
 }
 
 dependencies {
@@ -25,10 +27,6 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
     testImplementation(libs.junit.junit)
 }
-
-group = "org.openbase"
-version = "4.0.0-SNAPSHOT"
-description = "PlanetSudo is a reactive multi agent simulation game. This package can be used to prototype the artificial intelligence for a new team."
 
 publishing {
     publications.create<MavenPublication>("maven") {
