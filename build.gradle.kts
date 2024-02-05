@@ -15,7 +15,6 @@ plugins {
 group = "org.openbase"
 description = "PlanetSudo is a reactive multi agent simulation game. This package can be used to prototype the artificial intelligence for a new team."
 
-
 repositories {
     mavenLocal()
     mavenCentral()
