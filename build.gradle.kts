@@ -40,6 +40,11 @@ tasks.withType<JavaCompile>() {
 tasks.withType<Javadoc>() {
     options.encoding = "UTF-8"
 }
+
 kotlin {
     jvmToolchain(17)
+}
+
+application {
+    mainClass.set("org.openbase.planetsudo.main.PlanetSudo")
 }
