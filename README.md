@@ -12,7 +12,7 @@
 
 - In IntelliJ auf `Get from VSC` klicken, dann auf `Repository URL`.
 - Version control auf `Git` einstellen.
-- Sollte die Fehlermeldung `Git is not installed` auftauchen au `Download and Install` klicken.</br></br>
+- Sollte die Fehlermeldung `Git is not installed` auftauchen auf `Download and Install` klicken.</br></br>
 ![Übersicht des Get from Version Control Fensters](src/main/resources/img/readme/2_InstallGIT.png)</br></br>
     
 ### Planet Sudo installieren
@@ -26,10 +26,10 @@
 ![Wie man Planet Sudo Startet](src/main/resources/img/readme/4_RunPlanetSudo.png)</br></br>
 ## Anlegen einer neuen KI
 
-- Im PlanetSudoAI Projektansicht zur Klasse "DefaultStrategy.kt" navigieren (`src/main/kotlin/org.openbase.planetsudo/game.strategy`) und hier die `DefaultStrategy.kt` mit einem Rechtsklick auf die Klasse (`Refactor->Rename`) umbenennen.</br></br>
+- Im PlanetSudoAI Projektansicht zur Klasse "DefaultStrategy.kt" navigieren (`src/main/kotlin/org.openbase.planetsudo/game.strategy`) und hier die `DefaultStrategy.kt` mit einem Rechtsklick auf die Klasse (`Refactor` --> `Rename`) umbenennen.</br></br>
 ![Wie man eine Klasse umbenennt](src/main/resources/img/readme/5_Refactor.png)</br></br>
 - Die neue Strategieklasse kann nun erweitert werden.
-- Informationen über mögliche Funktionalitäten könnt ihr über die Methoden Dokumentation (JavaDoc) herausfinden.
+- Informationen über mögliche Funktionalitäten könnt ihr über die Methoden Dokumentation herausfinden.
     - z. B. ihr schreibt `agent.` und drückt dann (Strg + Leertaste).
 
 ## Anlegen eines neuen Teams
@@ -40,7 +40,7 @@
 
 ## Mit dem Server synchronisieren
 
-- Zunächst muss das eigene Team definiert werden. Hierzu in dem DropDown Menü (Mein Team) ein Team auswählen und anschließend bestätigen.
+- Zunächst muss das eigene Team definiert werden. Hierzu in dem DropDown Menü `Dein Team` ein Team auswählen und anschließend bestätigen (`Setzen`).
 - Nun kann über den Synchronisations-Button die Synchronisation erfolgen, sofern der Server erreichbar ist.
 - Ist das Statusfeld Blau, ist der Transfer erfolgreich gewesen.
 
