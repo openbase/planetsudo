@@ -5,32 +5,31 @@
 ### Intellij installieren
 
 - IntelliJ **Community Edition** (nicht die Ultimate Edition!) [herunterladen](https://www.jetbrains.com/idea/download/) und installieren.
-  ![Downloadseite der Community Edition](\src\main\resources\img\readme\0_DownlaodIDEA.png)
+  ![Downloadseite der Community Edition](src\main\resources\img\readme\0_DownlaodIDEA.png)
 
-  ![Installationsübersicht der IntelliJ IDEA](\src\main\resources\img\readme\1_IstallIDEA.png)
+  ![Installationsübersicht der IntelliJ IDEA](src\main\resources\img\readme\1_IstallIDEA.png)
 
 ### Git installieren
 
 - In IntelliJ auf `Get from VSC` klicken, dann auf `Repository URL`.
 - Version control auf `Git` einstellen.
 - Sollte die Fehlermeldung `Git is not installed` auftauchen au `Download and Install` klicken.
-  ![Übersicht des Get from Version Control Fensters](\src\main\resources\img\readme\2_InstallGIT.png)
+  ![Übersicht des Get from Version Control Fensters](src\main\resources\img\readme\2_InstallGIT.png)
     
 ### Planet Sudo installieren
 
 - In IntelliJ im selben Fenster die URL `https://github.com/openbase/planetsudo` einfügen und auf `Clone` klicken.
 - Sollte die Fehlermeldung `JDK "17" is missing` auftreten auf `Configure...` --> `Download JDK` gehen und dann `Eclipse Temurin` auswählen und installieren.
-  ![Das Download JDK Fenster](\src\main\resources\img\readme\3_ConfigureJDK.png)
+  ![Das Download JDK Fenster](src\main\resources\img\readme\3_ConfigureJDK.png)
 
 - Die Datei `src/main/kotlin/org.openbase.planetsudo/main/PlanetSudo.kt` öffnen (Doppelklick).
 - Jetzt kann PlanetSudo gestartet werden. (Hierzu auf den grünen Playbutton drücken)
-  ![Wie man Planet Sudo Startet](\src\main\resources\img\readme\4_RunPlanetSudo.png)
->Um eine bessere Unterstützung bei der KI-Entwickelung zu erhalten, in der "Project" Ansicht einen rechten Mausklick auf den  "ai" Wurzelordner ausführen und anschließen auf "Maven->Download Source and Documentation" klicken.
-
+  ![Wie man Planet Sudo Startet](src\main\resources\img\readme\4_RunPlanetSudo.png)
+- 
 ## Anlegen einer neuen KI
 
 - Im PlanetSudoAI Projektansicht zur Klasse "DefaultStrategy.kt" navigieren (`src/main/kotlin/org.openbase.planetsudo/game.strategy`) und hier die `DefaultStrategy.kt` mit einem Rechtsklick auf die Klasse (`Refactor->Rename`) umbenennen.
-  ![Wie man eine Klasse umbenennt](\src\main\resources\img\readme\5_Refactor.png)
+  ![Wie man eine Klasse umbenennt](src\main\resources\img\readme\5_Refactor.png)
 - Die neue Strategieklasse kann nun erweitert werden.
 - Informationen über mögliche Funktionalitäten könnt ihr über die Methoden Dokumentation (JavaDoc) herausfinden.
     - z. B. ihr schreibt `agent.` und drückt dann (Strg + Leertaste).
