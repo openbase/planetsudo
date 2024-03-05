@@ -22,12 +22,17 @@
 ![Das Download JDK Fenster](.readme/3_ConfigureJDK.png)</br></br>
 
 - Die Datei `src/main/kotlin/org.openbase.planetsudo/main/PlanetSudo.kt` öffnen (Doppelklick).
-- Jetzt kann PlanetSudo gestartet werden. (Hierzu auf den grünen Playbutton drücken)</br></br>
+- Jetzt kann PlanetSudo gestartet werden. Dazu einen Rechtsklick auf `Planet Sudo` und dann auf `Run 'Planet Sudo'` </br></br>
 ![Wie man Planet Sudo Startet](.readme/4_RunPlanetSudo.png)</br></br>
+
+- Nun muss in IntelliJ der Server eingestellt werden. Dazu oben rechts auf `PlanetSudo` klicken dort auf `Edit Configuration` und dann unter `Programm arguments: --server elaine` eingeben. Dann das ganze mit `Apply` bestätigen.</br></br>
+  ![Öffnen der Configurations](.readme/5_Configurations)</br></br>
+![Einstellen des Servers](.readme/6_ServerImplement)</br></br>
+
 ## Anlegen einer neuen KI
 
-- Im PlanetSudoAI Projektansicht zur Klasse "DefaultStrategy.kt" navigieren (`src/main/kotlin/org/openbase/planetsudo/game/strategy`) und hier die `DefaultStrategy.kt` mit einem Rechtsklick auf die Klasse (`Refactor` --> `Rename`) umbenennen.</br></br>
-![Wie man eine Klasse umbenennt](.readme/5_Refactor.png)</br></br>
+- In IntelliJ zur Klasse "DefaultStrategy.kt" navigieren (`src/main/kotlin/org/openbase/planetsudo/game/strategy`) und hier die `DefaultStrategy.kt` mit einem Rechtsklick auf die Klasse (`Refactor` --> `Rename`) umbenennen.</br></br>
+![Wie man eine Klasse umbenennt](.readme/7_Refactor.png)</br></br>
 - Die neue Strategieklasse kann nun erweitert werden.
 - Informationen über mögliche Funktionalitäten könnt ihr über die Methoden Dokumentation herausfinden.
     - z. B. ihr schreibt `agent.` und drückt dann (Strg + Leertaste).
