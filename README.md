@@ -26,10 +26,10 @@
 ![Wie man Planet Sudo Startet](.readme/4_RunPlanetSudo.png)</br></br>
 
 - Nun muss in IntelliJ der Server eingestellt werden. Dazu oben rechts auf `PlanetSudo` klicken dort auf `Edit Configuration` und dann unter `Programm arguments: --server elaine` eingeben. Dann das ganze mit `Apply` bestätigen.</br></br>
-  ![Öffnen der Configurations](.readme/5_Configurations)</br></br>
-![Einstellen des Servers](.readme/6_ServerImplement)</br></br>
+  ![Öffnen der Configurations](.readme/5_Configurations.png)</br></br>
+![Einstellen des Servers](.readme/6_ServerImplement.png)</br></br>
 
-- Als nächstes muss die Dokumentation heruntergeladen werden. Dazu in IntelliJ rechts an der Seite das Gradle-Menü öffnen und auf `Download Sources` klicken.</br></br>
+- Als Nächstes muss die Dokumentation heruntergeladen werden. Dazu in IntelliJ rechts an der Seite das Gradle-Menü öffnen und auf `Download Sources` klicken.</br></br>
 ![Herunterladen der Dokumentation](.readme/7_DownloadSources.png)</br></br>
 
 ## Anlegen einer neuen KI
@@ -39,23 +39,23 @@
 - Die neue Strategieklasse kann nun erweitert werden.
 - Informationen über mögliche Funktionalitäten könnt ihr über die Methoden Dokumentation herausfinden.
 - Dazu in der Strategie `agent.` schreiben und dann Strg + Leertaste drücken.
-- Nun kann mann alle möglichen Funktionen sehen. Um die Dokumentation zu diesen Anzuzeigen geht man auf die drei Punkte und dort auf `Code Completion Settings`.</br></br>
+- Nun kann mann alle möglichen Funktionen sehen. Um die Dokumentation zu diesen Anzuzeigen, geht man auf die drei Punkte und dort auf `Code Completion Settings`.</br></br>
 ![Öffnen der Code Completion Settings](.readme/9_CompletionSettings.png)</br></br>
-- Dort aktiviert man `Show the documentation popup in X ms` und stellt die Zeit nach belieben ein (z.B. 10 ms).</br></br>
+- Dort aktiviert man `Show the documentation popup in X ms` und stellt die Zeit nach Belieben ein (z.B. 10 ms).</br></br>
 ![Ändern der Einstellungen](.readme/10_DocumentationPopup.png)
 
 ## Anlegen eines neuen Teams
 
 - Sofern ihr zuvor eine neue Strategieklasse angelegt habt, bitte zunächst PlanetSudo beenden und anschließen neu starten. 
 - Anschließend in PlanetSudo unter `Einstellungen` auf `Team erstellen` klicken.
-- Wichtig ist hierbei, dass eine gültige Strategie angegeben wird. Hier erfolgt die Eingabe des Namens der zuvor erstellten Strategieklasse. Der Dateityp (".kt") wird hierbei nicht benötigt.
-![FOTO]()
+- Wichtig ist hierbei, dass eine gültige Strategie angegeben wird. Hier erfolgt die Eingabe des Namens der zuvor erstellten Strategieklasse. Der Dateityp (".kt") wird hierbei nicht benötigt.</br></br>
+![Wie man ein Team erstellt](.readme/11_TeamErstellen.png)</br></br>
+![Wie man sein Team benennt](.readme/12_TeamBennenung.png)</br></br>
 
 ## Mit dem Server synchronisieren
 
-- Über den Synchronisations-Button kann die Synchronisation erfolgen, sofern der Server erreichbar ist.
+- In Planet Sudo kann über den Synchronisations-Button die Synchronisation erfolgen.
 - Ist das Statusfeld Blau, ist der Transfer erfolgreich gewesen.
-![FOTO]()
 
 ## Sonstiges
 
@@ -65,4 +65,4 @@
     - Oder kontaktiert uns per [Mail](mailto:support@openbase.org)
 
 
-Copyright (C) 2009 - 2024 openbase.org
+Copyright (C) 2009 - 2024 [openbase.org](http://www.openbase.org)
