@@ -29,13 +29,20 @@
   ![Öffnen der Configurations](.readme/5_Configurations)</br></br>
 ![Einstellen des Servers](.readme/6_ServerImplement)</br></br>
 
+- Als nächstes muss die Dokumentation heruntergeladen werden. Dazu in IntelliJ rechts an der Seite das Gradle-Menü öffnen und auf `Download Sources` klicken.</br></br>
+![Herunterladen der Dokumentation](.readme/7_DownloadSources.png)</br></br>
+
 ## Anlegen einer neuen KI
 
 - In IntelliJ zur Klasse "DefaultStrategy.kt" navigieren (`src/main/kotlin/org/openbase/planetsudo/game/strategy`) und hier die `DefaultStrategy.kt` mit einem Rechtsklick auf die Klasse (`Refactor` --> `Rename`) umbenennen.</br></br>
-![Wie man eine Klasse umbenennt](.readme/7_Refactor.png)</br></br>
+![Wie man eine Klasse umbenennt](.readme/8_Refactor.png)</br></br>
 - Die neue Strategieklasse kann nun erweitert werden.
 - Informationen über mögliche Funktionalitäten könnt ihr über die Methoden Dokumentation herausfinden.
-    - z. B. ihr schreibt `agent.` und drückt dann (Strg + Leertaste).
+- Dazu in der Strategie `agent.` schreiben und dann Strg + Leertaste drücken.
+- Nun kann mann alle möglichen Funktionen sehen. Um die Dokumentation zu diesen Anzuzeigen geht man auf die drei Punkte und dort auf `Code Completion Settings`.</br></br>
+![Öffnen der Code Completion Settings](.readme/9_CompletionSettings.png)</br></br>
+- Dort aktiviert man `Show the documentation popup in X ms` und stellt die Zeit nach belieben ein (z.B. 10 ms).</br></br>
+![Ändern der Einstellungen](.readme/10_DocumentationPopup.png)
 
 ## Anlegen eines neuen Teams
 
