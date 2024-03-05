@@ -26,7 +26,7 @@
 ![Wie man Planet Sudo Startet](.readme/4_RunPlanetSudo.png)</br></br>
 ## Anlegen einer neuen KI
 
-- Im PlanetSudoAI Projektansicht zur Klasse "DefaultStrategy.kt" navigieren (`src/main/kotlin/org.openbase.planetsudo/game.strategy`) und hier die `DefaultStrategy.kt` mit einem Rechtsklick auf die Klasse (`Refactor` --> `Rename`) umbenennen.</br></br>
+- Im PlanetSudoAI Projektansicht zur Klasse "DefaultStrategy.kt" navigieren (`src/main/kotlin/org/openbase/planetsudo/game/strategy`) und hier die `DefaultStrategy.kt` mit einem Rechtsklick auf die Klasse (`Refactor` --> `Rename`) umbenennen.</br></br>
 ![Wie man eine Klasse umbenennt](.readme/5_Refactor.png)</br></br>
 - Die neue Strategieklasse kann nun erweitert werden.
 - Informationen über mögliche Funktionalitäten könnt ihr über die Methoden Dokumentation herausfinden.
@@ -37,12 +37,13 @@
 - Sofern ihr zuvor eine neue Strategieklasse angelegt habt, bitte zunächst PlanetSudo beenden und anschließen neu starten. 
 - Anschließend in PlanetSudo unter `Einstellungen` auf `Team erstellen` klicken.
 - Wichtig ist hierbei, dass eine gültige Strategie angegeben wird. Hier erfolgt die Eingabe des Namens der zuvor erstellten Strategieklasse. Der Dateityp (".kt") wird hierbei nicht benötigt.
+![FOTO]()
 
 ## Mit dem Server synchronisieren
 
-- Zunächst muss das eigene Team definiert werden. Hierzu in dem DropDown Menü `Dein Team` ein Team auswählen und anschließend bestätigen (`Setzen`).
-- Nun kann über den Synchronisations-Button die Synchronisation erfolgen, sofern der Server erreichbar ist.
+- Über den Synchronisations-Button kann die Synchronisation erfolgen, sofern der Server erreichbar ist.
 - Ist das Statusfeld Blau, ist der Transfer erfolgreich gewesen.
+![FOTO]()
 
 ## Sonstiges
 
