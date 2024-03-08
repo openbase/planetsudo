@@ -26,7 +26,7 @@
 - Jetzt kann PlanetSudo gestartet werden. Dazu einen Rechtsklick auf `Planet Sudo` und dann auf `Run 'Planet Sudo'` </br></br>
 ![Wie man Planet Sudo Startet](.readme/5_RunPlanetSudo.png)</br></br>
 
-- Nun muss in IntelliJ der Server eingestellt werden. Dazu oben rechts auf `PlanetSudo` klicken dort auf `Edit Configuration` und dann unter `Programm arguments: --server elaine` eingeben. Dann das ganze mit `Apply` bestätigen.</br></br>
+- Wenn du dich mit einem PlanetSudo Server verbinden willst, kannst du diesen in IntelliJ wie folgt einstellen: Dazu oben rechts auf `PlanetSudo` klicken dort auf `Edit Configuration` und dann unter `Programm arguments: --server YOUR_SERVER_NAME` eingeben. Dann das ganze mit `Apply` bestätigen.</br></br>
   ![Öffnen der Configurations](.readme/6_Configurations.png)</br></br>
 ![Einstellen des Servers](.readme/7_ServerImplement.png)</br></br>
 
