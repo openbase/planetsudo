@@ -40,7 +40,7 @@
 - Die neue Strategieklasse kann nun erweitert werden.
 - Informationen über mögliche Funktionalitäten könnt ihr über die Methoden Dokumentation herausfinden.
 - Dazu in der Strategie `agent.` schreiben und dann Strg + Leertaste drücken.
-- Nun kann mann alle möglichen Funktionen sehen. Um die Dokumentation zu diesen Anzuzeigen, geht man auf die drei Punkte und dort auf `Code Completion Settings`.</br></br>
+- Nun werden die möglichen Funktionen aufgeführt. Um eine detaillierte Beschreibung über die Funktionen zu erhalten, geht auf die drei Punkte und dort auf `Code Completion Settings`.</br></br>
 ![Öffnen der Code Completion Settings](.readme/10_CompletionSettings.png)</br></br>
 - Dort aktiviert man `Show the documentation popup in X ms` und stellt die Zeit nach Belieben ein (z.B. 10 ms).</br></br>
 ![Ändern der Einstellungen](.readme/11_DocumentationPopup.png)
