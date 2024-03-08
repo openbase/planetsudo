@@ -26,7 +26,7 @@
 - Jetzt kann PlanetSudo gestartet werden. Dazu einen Rechtsklick auf `Planet Sudo` und dann auf `Run 'Planet Sudo'` </br></br>
 ![Wie man Planet Sudo Startet](.readme/5_RunPlanetSudo.png)</br></br>
 
-- Wenn du dich mit einem PlanetSudo Server verbinden willst, kannst du diesen in IntelliJ wie folgt einstellen: Dazu oben rechts auf `PlanetSudo` klicken dort auf `Edit Configuration` und dann unter `Programm arguments: --server YOUR_SERVER_NAME` eingeben. Dann das ganze mit `Apply` bestätigen.</br></br>
+- Wenn du dich mit einem PlanetSudo Server verbinden willst, kannst du diesen in IntelliJ wie folgt einstellen (Vorher muss PlanetSudo wie oben beschrieben gestartet werden): Dazu oben rechts auf `PlanetSudo` klicken dort auf `Edit Configuration` und dann unter `Programm arguments: --server YOUR_SERVER_NAME` eingeben. Dann das ganze mit `Apply` bestätigen.</br></br>
   ![Öffnen der Configurations](.readme/6_Configurations.png)</br></br>
 ![Einstellen des Servers](.readme/7_ServerImplement.png)</br></br>
 
@@ -35,7 +35,7 @@
 
 ## Anlegen einer neuen KI
 
-- In IntelliJ zur Klasse "DefaultStrategy.kt" navigieren (`src/main/kotlin/org/openbase/planetsudo/game/strategy`) und hier die `DefaultStrategy.kt` mit einem Rechtsklick auf die Klasse (`Refactor` --> `Rename`) umbenennen.</br></br>
+- In IntelliJ zur Klasse "DefaultStrategy.kt" navigieren (`src/main/kotlin/org/openbase/planetsudo/game/strategy`) und hier die `DefaultStrategy.kt` mit einem Rechtsklick auf die Klasse (`Refactor` --> `Copy`) kopieren.</br></br>
 ![Wie man eine Klasse umbenennt](.readme/9_Refactor.png)</br></br>
 - Die neue Strategieklasse kann nun erweitert werden.
 - Informationen über mögliche Funktionalitäten könnt ihr über die Methoden Dokumentation herausfinden.
