@@ -1,5 +1,10 @@
 # Planet Sudo
 
+Zwei unterschiedliche Roboterteams erobern einen für sie unbekannten Planeten. Ihre Mutterschiffe sind bereits gelandet und sie erkundschaften die Umgebung und sammeln in Konkurrenz über den Planeten zufällig verstreute Ressourcen ein, die sie anschließend zum Mutterschiff bringen.
+Ziel des Spiels ist es mit dem im Mutterschiff vorhandenen Treibstoff so viele Ressourcen wie möglich einzusammeln und zum Mutterschiff zu befördern.
+Die Roboter selber verbrauchen den Treibstoff und müssen diesen Regelmäßig beim Mutterschiff wieder auftanken. Andererseits bleiben sie auf dem Spielfeld ohne Funktionalität zurück. Zum einsammeln der Ressourcen wird eine gewisse Zeit benötigt, zudem sind Roboter die eine Ressource zum Mutterschiff transportieren, langsamer als normal.
+Das Spiel endet, wenn der Treibstoff beider Teams verbraucht ist.
+
 ## Installation via IntelliJ IDE
 
 ### Intellij installieren
