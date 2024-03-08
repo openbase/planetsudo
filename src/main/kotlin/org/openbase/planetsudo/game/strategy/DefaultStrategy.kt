@@ -20,6 +20,7 @@ package org.openbase.planetsudo.game.strategy /*-
  * #L%
  */
 
+import org.openbase.planetsudo.game.SwatTeam.*
 import org.openbase.planetsudo.level.levelobjects.AgentInterface
 
 /**
@@ -77,12 +78,13 @@ class DefaultStrategy(agent: AgentInterface) : StrategyLevel1(agent) {
      * Eine Regel kann mehreren, durch "and" verbundene Swat Teams zugeteilt werden.
      * Zudem können Swat Teams mit dem "NOT_" prefix von einer Regel ausgeschlossen werden.
      *
-     * z.B. "Just Go" swat ALPHA inCase { true } then { agent.go()}
-     * oder "Just Go" swat ALPHA and FOXTROT inCase { true } then { agent.go()}
+     * z.B. "Just Go" swat ALPHA inCase { true } then { go() }
+     * oder "Just Go" swat ALPHA and FOXTROT inCase { agent.isAtMothership } then { orderFuel(10) }
+     * oder "Just Go" commander inCase { agent.seeResource && !agent.isCarryingResource } then { turnAround() }
      */
     override fun loadRules() {
         // -------------------------------------------->
-        "Just Go" all inCase { true } then { agent.go() }
+        "Just Go" all inCase { true } then { go() }
         // -------------------------------------------->
         // Füge hier die Regel mit der nächst höheren Priorität ein. <---- !!! HIER STARTEN !!!
         // -------------------------------------------->
@@ -99,7 +101,7 @@ class DefaultStrategy(agent: AgentInterface) : StrategyLevel1(agent) {
      * ACHTUNG: Die default Swats ALL und COMMANDER können anhand dieser Methode nicht modifiziert werden!
      */
     override fun loadSwatTeams() {
-        // createSwat(ALPHA, 1, 6, 8)
+        createSwat(ALPHA, 0)
         // createSwat(BRAVO, 2, 6, 7)
         // createSwat(FOXTROT, 2, 6, 7)
         // ...
