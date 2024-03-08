@@ -4,7 +4,7 @@
 
 ### Intellij installieren
 
-- IntelliJ ***Community Edition*** (nicht die Ultimate Edition!) [herunterladen](https://www.jetbrains.com/idea/download/) und installieren.</br></br>
+- IntelliJ ***Community Edition*** (nicht die Ultimate Edition!) - *um zur Community Edition zu kommen muss man herunterscrollen* -  [herunterladen](https://www.jetbrains.com/idea/download/) und installieren.</br></br>
 ![Downloadseite der Ultimate Edition](.readme/0_NotUltimate.png)</br></br>
 ![Downloadseite der Community Edition](.readme/1_DownlaodIDEA.png)</br></br>
 ![Installationsübersicht der IntelliJ IDEA](.readme/2_IstallIDEA.png)</br></br>
