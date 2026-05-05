@@ -26,7 +26,6 @@ repositories {
 dependencies {
     implementation(libs.org.openbase.planetsudo.engine)
     implementation(kotlin("stdlib-jdk8"))
-    testImplementation(libs.junit.junit)
 }
 
 publishing {
@@ -44,7 +43,7 @@ tasks.withType<Javadoc>() {
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
 
 tasks.build {
