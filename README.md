@@ -9,7 +9,7 @@ Das Spiel endet, wenn der Treibstoff beider Teams verbraucht ist.
 
 ### Intellij installieren
 
-- IntelliJ  -  [herunterladen](https://www.jetbrains.com/idea/download/) und installieren.</br></br>
+- IntelliJ [herunterladen](https://www.jetbrains.com/idea/download/) und installieren.</br></br>
 ![Downloadseite von IntelliJ](.readme/0_IntelliJ.png)</br></br>
 ![Downloadseite von IntelliJ Schritt 2](.readme/1_DownloadIntelliJ.png)</br></br>
 ![Installationsübersicht der IntelliJ IDEA](.readme/2_InstallIntelliJ.png)</br></br>
