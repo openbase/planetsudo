@@ -1,6 +1,6 @@
 [versions]
-org-openbase-planetsudo-engine = "4.0.1"
-#org-openbase-planetsudo-engine = "[4.0,4.1-alpha)"
+#org-openbase-planetsudo-engine = "4.0.1"
+org-openbase-planetsudo-engine = "[4.0,5.1-alpha)"
 
 [libraries]
 org-openbase-planetsudo-engine = { module = "org.openbase:planetsudo.engine", version.ref = "org-openbase-planetsudo-engine" }
