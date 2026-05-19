@@ -10,8 +10,8 @@ Das Spiel endet, wenn der Treibstoff beider Teams verbraucht ist.
 ### Intellij installieren
 
 - IntelliJ  -  [herunterladen](https://www.jetbrains.com/idea/download/) und installieren.</br></br>
-![Downloadseite der Ultimate Edition](.readme/0_IntelliJ.png)</br></br>
-![Downloadseite der Community Edition](.readme/1_DownloadIntelliJ.png)</br></br>
+![Downloadseite von IntelliJ](.readme/0_IntelliJ.png)</br></br>
+![Downloadseite von IntelliJ Schritt 2](.readme/1_DownloadIntelliJ.png)</br></br>
 ![Installationsübersicht der IntelliJ IDEA](.readme/2_InstallIntelliJ.png)</br></br>
 
 ### Git installieren
@@ -25,7 +25,7 @@ Das Spiel endet, wenn der Treibstoff beider Teams verbraucht ist.
 
 - In IntelliJ im selben Fenster die URL `https://github.com/openbase/planetsudo` einfügen und auf `Clone` klicken.
 - Planet Sudo Project vertrauen
-  ![Das Project vertrauen Fenster](.readme/4_ProjektVertrauen.png)</br></br>
+![Das Project vertrauen Fenster](.readme/4_ProjektVertrauen.png)</br></br>
 - Sollte die Fehlermeldung `JDK "20" is missing` auftreten auf `Configure...` --> `Download JDK` gehen und dann `Microsoft OpenJDK` auswählen und installieren.</br></br>
 ![Das Download JDK Fenster](.readme/5_ConfigureJDK.png)</br></br>
 
@@ -34,7 +34,7 @@ Das Spiel endet, wenn der Treibstoff beider Teams verbraucht ist.
 ![Wie man Planet Sudo Startet](.readme/6_RunPlanetSudo.png)</br></br>
 
 - Wenn du dich mit einem PlanetSudo Server verbinden willst, kannst du diesen in IntelliJ wie folgt einstellen (Vorher muss PlanetSudo wie oben beschrieben gestartet werden): Dazu oben rechts auf `PlanetSudo` klicken dort auf `Edit Configuration` und dann unter `Programm arguments: --server YOUR_SERVER_NAME` eingeben. Dann das ganze mit `Apply` bestätigen.</br></br>
-  ![Öffnen der Configurations](.readme/7_Configurations.png)</br></br>
+![Öffnen der Configurations](.readme/7_Configurations.png)</br></br>
 ![Einstellen des Servers](.readme/8_ServerImplement.png)</br></br>
 
 - Als Nächstes muss die Dokumentation heruntergeladen werden. Dazu in IntelliJ rechts an der Seite das Gradle-Menü öffnen und auf `Download Sources` klicken.</br></br>
