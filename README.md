@@ -9,27 +9,29 @@ Das Spiel endet, wenn der Treibstoff beider Teams verbraucht ist.
 
 ### Intellij installieren
 
-- IntelliJ ***Community Edition*** (nicht die Ultimate Edition!) - *um zur Community Edition zu kommen muss man herunterscrollen* -  [herunterladen](https://www.jetbrains.com/idea/download/) und installieren.</br></br>
-![Downloadseite der Ultimate Edition](.readme/0_NotUltimate.png)</br></br>
-![Downloadseite der Community Edition](.readme/1_DownlaodIDEA.png)</br></br>
-![Installationsübersicht der IntelliJ IDEA](.readme/2_IstallIDEA.png)</br></br>
+- IntelliJ  -  [herunterladen](https://www.jetbrains.com/idea/download/) und installieren.</br></br>
+![Downloadseite der Ultimate Edition](.readme/0_IntelliJ.png)</br></br>
+![Downloadseite der Community Edition](.readme/1_DownloadIntelliJ.png)</br></br>
+![Installationsübersicht der IntelliJ IDEA](.readme/2_InstallIntelliJ.png)</br></br>
 
 ### Git installieren
 
-- In IntelliJ auf `Get from VSC` klicken, dann auf `Repository URL`.
+- In IntelliJ auf `Clone Repository` klicken, dann auf `Repository URL`.
+![Übersicht des Get from Version Control Fensters](.readme/3_InstallGit.png)</br></br>
 - Version control auf `Git` einstellen.
 - Sollte die Fehlermeldung `Git is not installed` auftauchen auf `Download and Install` klicken.</br></br>
-![Übersicht des Get from Version Control Fensters](.readme/3_InstallGIT.png)</br></br>
     
 ### Planet Sudo installieren
 
 - In IntelliJ im selben Fenster die URL `https://github.com/openbase/planetsudo` einfügen und auf `Clone` klicken.
-- Sollte die Fehlermeldung `JDK "17" is missing` auftreten auf `Configure...` --> `Download JDK` gehen und dann `Eclipse Temurin` auswählen und installieren.</br></br>
-![Das Download JDK Fenster](.readme/4_ConfigureJDK.png)</br></br>
+- Planet Sudo Project vertrauen
+  ![Das Project vertrauen Fenster](.readme/4_ProjektVertrauen.png)</br></br>
+- Sollte die Fehlermeldung `JDK "20" is missing` auftreten auf `Configure...` --> `Download JDK` gehen und dann `Microsoft OpenJDK` auswählen und installieren.</br></br>
+![Das Download JDK Fenster](.readme/5_ConfigureJDK.png)</br></br>
 
 - Die Datei `src/main/kotlin/org.openbase.planetsudo/main/PlanetSudo.kt` öffnen (Doppelklick).
-- Jetzt kann PlanetSudo gestartet werden. Dazu einen Rechtsklick auf `Planet Sudo` und dann auf `Run 'Planet Sudo'` </br></br>
-![Wie man Planet Sudo Startet](.readme/5_RunPlanetSudo.png)</br></br>
+- Nach kurzer Wartezeit wegen des Downloads, kann PlanetSudo gestartet werden. Dazu einen Rechtsklick auf `Planet Sudo` und dann auf `Run 'Planet Sudo'` </br></br>
+![Wie man Planet Sudo Startet](.readme/6_RunPlanetSudo.png)</br></br>
 
 - Wenn du dich mit einem PlanetSudo Server verbinden willst, kannst du diesen in IntelliJ wie folgt einstellen (Vorher muss PlanetSudo wie oben beschrieben gestartet werden): Dazu oben rechts auf `PlanetSudo` klicken dort auf `Edit Configuration` und dann unter `Programm arguments: --server YOUR_SERVER_NAME` eingeben. Dann das ganze mit `Apply` bestätigen.</br></br>
   ![Öffnen der Configurations](.readme/6_Configurations.png)</br></br>
