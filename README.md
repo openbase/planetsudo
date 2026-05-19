@@ -34,31 +34,31 @@ Das Spiel endet, wenn der Treibstoff beider Teams verbraucht ist.
 ![Wie man Planet Sudo Startet](.readme/6_RunPlanetSudo.png)</br></br>
 
 - Wenn du dich mit einem PlanetSudo Server verbinden willst, kannst du diesen in IntelliJ wie folgt einstellen (Vorher muss PlanetSudo wie oben beschrieben gestartet werden): Dazu oben rechts auf `PlanetSudo` klicken dort auf `Edit Configuration` und dann unter `Programm arguments: --server YOUR_SERVER_NAME` eingeben. Dann das ganze mit `Apply` bestätigen.</br></br>
-  ![Öffnen der Configurations](.readme/6_Configurations.png)</br></br>
-![Einstellen des Servers](.readme/7_ServerImplement.png)</br></br>
+  ![Öffnen der Configurations](.readme/7_Configurations.png)</br></br>
+![Einstellen des Servers](.readme/8_ServerImplement.png)</br></br>
 
 - Als Nächstes muss die Dokumentation heruntergeladen werden. Dazu in IntelliJ rechts an der Seite das Gradle-Menü öffnen und auf `Download Sources` klicken.</br></br>
-![Herunterladen der Dokumentation](.readme/8_DownloadSources.png)</br></br>
+![Herunterladen der Dokumentation](.readme/9_DownloadSources.png)</br></br>
 
 ## Anlegen einer neuen KI
 
 - In IntelliJ zur Klasse "DefaultStrategy.kt" navigieren (`src/main/kotlin/org/openbase/planetsudo/game/strategy`) und hier die `DefaultStrategy.kt` mit einem Rechtsklick auf die Klasse (`Refactor` --> `Copy`) kopieren.</br></br>
-![Wie man eine Klasse umbenennt](.readme/9_Refactor.png)</br></br>
+![Wie man eine Klasse umbenennt](.readme/10_Refactor.png)</br></br>
 - Die neue Strategieklasse kann nun erweitert werden.
 - Informationen über mögliche Funktionalitäten könnt ihr über die Methoden Dokumentation herausfinden.
 - Dazu in der Strategie `agent.` schreiben und dann Strg + Leertaste drücken.
 - Nun werden die möglichen Funktionen aufgeführt. Um eine detaillierte Beschreibung über die Funktionen zu erhalten, geht auf die drei Punkte und dort auf `Code Completion Settings`.</br></br>
-![Öffnen der Code Completion Settings](.readme/10_CompletionSettings.png)</br></br>
+![Öffnen der Code Completion Settings](.readme/11_CompletionSettings.png)</br></br>
 - Dort aktiviert man `Show the documentation popup in X ms` und stellt die Zeit nach Belieben ein (z.B. 10 ms).</br></br>
-![Ändern der Einstellungen](.readme/11_DocumentationPopup.png)
+![Ändern der Einstellungen](.readme/12_DocumentationPopup.png)
 
 ## Anlegen eines neuen Teams
 
 - Sofern ihr zuvor eine neue Strategieklasse angelegt habt, bitte zunächst PlanetSudo beenden und anschließen neu starten. 
 - Anschließend in PlanetSudo unter `Einstellungen` auf `Team erstellen` klicken.
 - Wichtig ist hierbei, dass eine gültige Strategie angegeben wird. Hier erfolgt die Eingabe des Namens der zuvor erstellten Strategieklasse. Der Dateityp (".kt") wird hierbei nicht benötigt.</br></br>
-![Wie man ein Team erstellt](.readme/12_TeamErstellen.png)</br></br>
-![Wie man sein Team benennt](.readme/13_TeamBennenung.png)</br></br>
+![Wie man ein Team erstellt](.readme/13_TeamErstellen.png)</br></br>
+![Wie man sein Team benennt](.readme/14_TeamBennenung.png)</br></br>
 
 ## Mit dem Server synchronisieren
 
