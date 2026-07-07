@@ -73,4 +73,4 @@ Das Spiel endet, wenn der Treibstoff beider Teams verbraucht ist.
     - Oder kontaktiert uns per [Mail](mailto:support@openbase.org)
 
 
-Copyright (C) 2009 - 2024 [openbase.org](http://www.openbase.org)
+Copyright (C) 2009 - 2026 [openbase.org](http://www.openbase.org)
