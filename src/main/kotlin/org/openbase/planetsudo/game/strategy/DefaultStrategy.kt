@@ -4,21 +4,23 @@ import org.openbase.planetsudo.game.SwatTeam.*
 import org.openbase.planetsudo.level.levelobjects.AgentInterface
 
 /**
- * Diese Klasse ist eine Vorlage für eine KI im Spiel: PlanetSudo
+ * Willkommen bei PlanetSudo!
+ *
+ * Diese Klasse ist eine Vorlage für deine KI-Strategie.
  * ============================================================
  * @author [Divine Threepwood](mailto:divine@openbase.org)
  *
- * Insgesamt gibt es drei verschiedene Level für die KI-Strategy. Um so höher das Level,
- * um so mehr Funktionen stehen für die Entwicklung einer Strategie zur Verfügung.
- * Bitte steiger dich langsamen in die Entwicklung deiner Strategie und beginne mit dem Level 1.
- * Nur so verliest du nicht den Überblick über wichtige Basisfunktionen und kannst deine KI-Strategie
+ * Insgesamt gibt es drei verschiedene Level für die KI-Strategie. Je höher das Level ist,
+ * desto mehr Funktionen stehen für die Entwicklung einer Strategie zur Verfügung.
+ * Bitte steigere dich langsam in die Entwicklung deiner Strategie und beginne mit Level 1.
+ * Nur so verlierst du nicht den Überblick über wichtige Basisfunktionen und kannst deine KI-Strategie
  * Schritt für Schritt weiterentwickeln.
  *
- * - StrategyLevel1: Alle Basisfunktionen die du für die Entwicklung einer KI-Strategie benötigst, mit dem
+ * - StrategyLevel1: Alle Basisfunktionen, die du für die Entwicklung einer KI-Strategie benötigst, mit dem
  *                   Hauptfokus auf Energie tanken und Ressourcen sammeln.
- * - StrategyLevel2: Erweitert die Basisfunktionen um gegen feindliche Agenten zu kämpfen und den Planeten zu erobern.
- * - StrategyLevel3: Schaltet alle Spezialfunktionen frei, um eine mächtige Sudo KI-Strategie zu entwickeln. Wichtig ist
- *                   hierbei die Basisfunktionen nicht zu vernachlässigen, da diese weiterhin die Grundlage für eine gute
+ * - StrategyLevel2: Erweitert die Basisfunktionen um den Kampf gegen feindliche Agenten und die Eroberung des Planeten.
+ * - StrategyLevel3: Schaltet alle Spezialfunktionen frei, um eine mächtige Sudo-KI-Strategie zu entwickeln. Wichtig ist
+ *                   hierbei, die Basisfunktionen nicht zu vernachlässigen, da sie weiterhin die Grundlage für eine gute
  *                   KI-Strategie bilden. Zudem ist es wichtig, dass du dich mit den Spezialfunktionen vertraut machst.
  *                   Nur ein gutes Zusammenspiel aller Funktionen führt zu einer mächtigen und individuellen Strategie.
  */

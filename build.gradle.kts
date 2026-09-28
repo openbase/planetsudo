@@ -25,7 +25,6 @@ repositories {
 
 dependencies {
     implementation(libs.org.openbase.planetsudo.engine)
-    implementation(kotlin("stdlib-jdk8"))
 }
 
 publishing {
@@ -59,7 +58,6 @@ tasks.register<Copy>("copyPreCommitHook") {
 }
 
 ktlint {
-    disabledRules.set(setOf("no-wildcard-imports"))
     filter {
         exclude { entry -> entry.file.toString().contains("generated") }
     }
