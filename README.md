@@ -42,7 +42,8 @@ Das Spiel endet, wenn der Treibstoff beider Teams verbraucht ist.
 
 ## Anlegen einer neuen KI
 
-- In IntelliJ zur Klasse "DefaultStrategy.kt" navigieren (`src/main/kotlin/org/openbase/planetsudo/game/strategy`) und hier die `DefaultStrategy.kt` mit einem Rechtsklick auf die Klasse (`Refactor` --> `Copy`) kopieren.</br></br>
+- In IntelliJ zur Klasse "DefaultStrategy.kt" navigieren (`src/main/kotlin/org/openbase/planetsudo/game/strategy`) und hier die `DefaultStrategy.kt` mit einem Rechtsklick auf die Klasse (`Refactor` --> `Copy`) kopieren.
+- **ACHTUNG!** Der neue Klassenname darf keine Sonderzeichen enthalten!</br></br>
 ![Wie man eine Klasse umbenennt](.readme/10_Refactor.png)</br></br>
 - Die neue Strategieklasse kann nun erweitert werden.
 - Informationen über mögliche Funktionalitäten könnt ihr über die Methoden Dokumentation herausfinden.
