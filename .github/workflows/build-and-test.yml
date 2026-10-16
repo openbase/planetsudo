@@ -44,7 +44,7 @@ jobs:
         run: ./gradlew --build-cache build -x test
 
       - name: Upload build reports
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         if: ${{ failure() || contains(github.event.pull_request.labels.*.name, 'force reports') }}
         with:
           name: Build Reports
@@ -83,7 +83,7 @@ jobs:
         run: ./gradlew --build-cache check
 
       - name: Upload test reports
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         if: ${{ failure() || contains(github.event.pull_request.labels.*.name, 'force reports') }}
         with:
           name: Test Reports

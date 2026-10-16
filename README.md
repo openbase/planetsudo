@@ -29,8 +29,8 @@ Das Spiel endet, wenn der Treibstoff beider Teams verbraucht ist.
 - Sollte die Fehlermeldung `JDK "20" is missing` auftreten auf `Configure...` --> `Download JDK` gehen und dann `Microsoft OpenJDK` auswählen und installieren.</br></br>
 ![Das Download JDK Fenster](.readme/5_ConfigureJDK.png)</br></br>
 
-- Die Datei `src/main/kotlin/org.openbase.planetsudo/main/PlanetSudo.kt` öffnen (Doppelklick).
-- Nach kurzer Wartezeit wegen des Downloads, kann PlanetSudo gestartet werden. Dazu einen Rechtsklick auf `Planet Sudo` und dann auf `Run 'Planet Sudo'` </br></br>
+- Über den Dateibaum auf der rechten Seite in IntelliJ die Datei `src/main/kotlin/org.openbase.planetsudo/main/PlanetSudo.kt` öffnen (Doppelklick).
+- Nach kurzer Wartezeit, wegen des Downloads, kann PlanetSudo gestartet werden. Dazu einen Rechtsklick auf `Planet Sudo` und dann auf `Run 'Planet Sudo'` </br></br>
 ![Wie man Planet Sudo Startet](.readme/6_RunPlanetSudo.png)</br></br>
 
 - Wenn du dich mit einem PlanetSudo Server verbinden willst, kannst du diesen in IntelliJ wie folgt einstellen (Vorher muss PlanetSudo wie oben beschrieben gestartet werden): Dazu oben rechts auf `PlanetSudo` klicken dort auf `Edit Configuration` und dann unter `Programm arguments: --server YOUR_SERVER_NAME` eingeben. Dann das ganze mit `Apply` bestätigen.</br></br>
@@ -42,7 +42,8 @@ Das Spiel endet, wenn der Treibstoff beider Teams verbraucht ist.
 
 ## Anlegen einer neuen KI
 
-- In IntelliJ zur Klasse "DefaultStrategy.kt" navigieren (`src/main/kotlin/org/openbase/planetsudo/game/strategy`) und hier die `DefaultStrategy.kt` mit einem Rechtsklick auf die Klasse (`Refactor` --> `Copy`) kopieren.</br></br>
+- In IntelliJ zur Klasse "DefaultStrategy.kt" navigieren (`src/main/kotlin/org/openbase/planetsudo/game/strategy`) und hier die `DefaultStrategy.kt` mit einem Rechtsklick auf die Klasse (`Refactor` --> `Copy`) kopieren.
+- **ACHTUNG!** Der neue Klassenname darf keine Sonderzeichen enthalten!</br></br>
 ![Wie man eine Klasse umbenennt](.readme/10_Refactor.png)</br></br>
 - Die neue Strategieklasse kann nun erweitert werden.
 - Informationen über mögliche Funktionalitäten könnt ihr über die Methoden Dokumentation herausfinden.

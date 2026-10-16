@@ -1,6 +1,6 @@
 package org.openbase.planetsudo.game.strategy
 
-import org.openbase.planetsudo.game.SwatTeam.*
+import org.openbase.planetsudo.game.SwatTeam
 import org.openbase.planetsudo.level.levelobjects.AgentInterface
 
 /**
@@ -83,7 +83,7 @@ class DefaultStrategy(agent: AgentInterface) : StrategyLevel1(agent) {
      * ACHTUNG: Die default Swats ALL und COMMANDER können anhand dieser Methode nicht modifiziert werden!
      */
     override fun loadSwatTeams() {
-        createSwat(ALPHA, 0)
+        createSwat(SwatTeam.ALPHA, 0)
         // createSwat(BRAVO, 2, 6, 7)
         // createSwat(FOXTROT, 2, 6, 7)
         // ...
