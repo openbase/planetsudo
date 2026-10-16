@@ -60,8 +60,8 @@ class DefaultStrategy(agent: AgentInterface) : StrategyLevel1(agent) {
      * Eine Regel kann mehreren, durch "and" verbundene Swat Teams zugeteilt werden.
      * Zudem können Swat Teams mit dem "NOT_" prefix von einer Regel ausgeschlossen werden.
      *
-     * z.B. "Just Go" swat ALPHA inCase { true } then { go() }
-     * oder "Just Go" swat ALPHA and FOXTROT inCase { agent.isAtMothership } then { orderFuel(10) }
+     * z.B. "Just Go" swat SwatTeam.ALPHA inCase { true } then { go() }
+     * oder "Just Go" swat SwatTeam.ALPHA and SwatTeam.FOXTROT inCase { agent.isAtMothership } then { orderFuel(10) }
      * oder "Just Go" commander inCase { agent.seeResource && !agent.isCarryingResource } then { turnAround() }
      */
     override fun loadRules() {
@@ -84,8 +84,8 @@ class DefaultStrategy(agent: AgentInterface) : StrategyLevel1(agent) {
      */
     override fun loadSwatTeams() {
         createSwat(SwatTeam.ALPHA, 0)
-        // createSwat(BRAVO, 2, 6, 7)
-        // createSwat(FOXTROT, 2, 6, 7)
+        // createSwat(SwatTeam.BRAVO, 2, 6, 7)
+        // createSwat(SwatTeam.FOXTROT, 2, 6, 7)
         // ...
     }
 }
