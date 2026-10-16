@@ -27,6 +27,10 @@ dependencies {
     implementation(libs.org.openbase.planetsudo.engine)
 }
 
+configurations.configureEach {
+    resolutionStrategy.cacheDynamicVersionsFor(15, "minutes")
+}
+
 publishing {
     publications.create<MavenPublication>("maven") {
         from(components["java"])
